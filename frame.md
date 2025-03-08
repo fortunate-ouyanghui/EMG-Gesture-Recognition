@@ -31,6 +31,8 @@
 请点击[Myoware](https://www.yiboard.com/thread-1732-1-1.html)
 ## AD8221数据手册
 请点击[AD8221](https://www.analog.com/cn/products/ad8221.html)
+## 树莓派如何安装Ubuntu
+请点击[树莓派](https://github.com/fortunate-ouyanghui/env-config/blob/main/raspberrypi.md)
 ## 需要学习的知识
 ### 信号预处理
 | 噪声类型 | 特征 |
