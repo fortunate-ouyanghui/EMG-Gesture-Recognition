@@ -28,7 +28,9 @@
 ## 肌电信号手势识别框架
 ![frame](https://github.com/user-attachments/assets/be356d54-544a-4cbe-b53d-83a417e67453)
 ## 如何上手Myoware
-请点击连接[Myoware](https://www.yiboard.com/thread-1732-1-1.html)
+请点击[Myoware](https://www.yiboard.com/thread-1732-1-1.html)
+## AD8221数据手册
+请点击[AD8221](https://www.analog.com/cn/products/ad8221.html)
 ## 需要学习的知识
 ### 信号预处理
 | 噪声类型 | 特征 |
