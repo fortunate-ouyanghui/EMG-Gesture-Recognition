@@ -55,3 +55,50 @@
 ### 肌疲劳鲁棒及动作可分性肌电特征研究
 #### 引言
 本章则针对肌肉疲劳致使***肌电特征产生变化***，从而导致动作识别***模型的分类精度下降***和***泛化性变差***的问题而展开研究，旨在构建一种对肌疲劳鲁棒和动作可分性高的特征集合
+肌疲劳鲁棒性及可分性特征分析方法:（1）SVM（2）DT（3）LDA（4）KNN
+##### 时间窗口分割
+![1](https://github.com/user-attachments/assets/66eedfa4-8647-4b99-a644-fe87d7134d77)
+##### 时域特征
+（1）绝对平均值（Mean Absolute Value，MAV）：其反映了一段时间内肌肉作用的强度大小  
+（2）均方根值（Root Mean Square，RMS）：能够代表 sEMG 的有效值，体现运动过程中各肌肉的贡献程度  
+（3）方差（Variance，VAR）：方差反应 sEMG 幅值的变化程度  
+（4）过零点数（Zero Crossing，ZC）：在不同的动作模式下，sEMG 信号的波动情况有所不同，而波动的剧烈程度可用 sEMG 经过零点的次数即过零点数来表示  
+（5）积分肌电值（Integrated EMG，IEMG）：反映了肌肉活动的强弱，其值越大，肌肉的活动程度越高  
+（6）波长（Waveform Length，WL）：反映 sEMG 的振幅和波动频率信息  
+（7）斜率符号变化次数（Slope Sign Change，SSC）：反映 sEMG 的变化程度  
+##### 频域特征
+（1）平均功率频率（Mean Power Frequency，MPF）：反应了肌肉活动的整体水平  
+（2）中值频率（Median Frequency，MF）：体现肌肉活动的平均水平  
+（3）功率谱最大值（Maximum Power Spectral，MPS）：MPS 反映了肌肉活动的强度，强度越大，则对应 MPS 的值越高  
+（4）重心频率（Centroid Frequency，CF）：CF 反应了频谱的集中程度和整体位置  
+##### 时频域特征
+本文选择提取基于小波包变换的时频域特征  
+![2](https://github.com/user-attachments/assets/75bb78b9-fd95-4196-8e74-f7d0c669a495)
+#### 非线性动力学特征
+本文针对模糊熵（FE）和排列熵（PE）展开相关非线性特征分析
+##### 特征可视化
+本文采用 t 分布随机领域嵌入[69]（t-distributed Stochastic Neighbor Embedding，t-SNE）对肌肉疲劳前后的特征进行可视化分析，观察其分布变化情况
+##### 实验效果
+![3](https://github.com/user-attachments/assets/9a752a64-1c18-440c-8a9c-fa1f17af3ff8)
+![4](https://github.com/user-attachments/assets/1ee2a0e7-5edc-4d04-bf09-e1b4e0a69e87)
+![5](https://github.com/user-attachments/assets/eaeda01c-145c-4b9c-862f-b122aefa29e7)
+![6](https://github.com/user-attachments/assets/f319a2f7-dcd3-4ec4-94df-3f1c04fab716)
+![7](https://github.com/user-attachments/assets/080d0559-8a66-404a-a316-07e723afa09a)
+![8](https://github.com/user-attachments/assets/5d8ee99e-a82a-4b98-acd4-3c08782f37f6)
+![9](https://github.com/user-attachments/assets/302483c3-d35e-4930-81b3-800638de0d90)
+### 肌疲劳鲁棒的对抗域适应动作识别方法研究
+针对肌肉疲劳前后出现的数据分布差异大和标签不平衡的问题，提出一种肌疲劳鲁棒的对抗域适应动作识别方法
+- 融合注意力机制的 CNN-GRU 特征提取
+- 肌疲劳鲁棒的对抗域适应模型结构
+![10](https://github.com/user-attachments/assets/e823b1a8-b3d3-4270-a221-d2b9d0b82f93)
+![11](https://github.com/user-attachments/assets/4ff6e60f-87dc-452e-afc6-1c390561e101)
+### 其余略
+
+
+
+
+
+
+
+
+
